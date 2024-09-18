@@ -9,7 +9,7 @@ form.addEventListener('submit', (e) => {
     // e.preventDefault();
     let errors = [];
     if(first_name){
-        errors = getSignupFormErrors(first_name.value, user_email.value, user_password.value, user_repeat_password);
+        errors = getSignupFormErrors(first_name.value, user_email.value, user_password.value, user_repeat_password.value);
     }else{
         errors = getLoginFormErrors(user_email.value, user_password.value );
     }
